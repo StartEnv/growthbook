@@ -16,7 +16,6 @@ services:
       - mongo
     environment:
       - MONGODB_URI=mongodb://root:password@mongo:27017/growthbook?authSource=admin
-    environment:
       - APP_ORIGIN=https://${PROJECT_DOMAIN}
       - API_HOST=https://${PROJECT_DOMAIN}:3100
     volumes:
